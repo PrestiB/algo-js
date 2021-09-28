@@ -17,7 +17,7 @@ console.log(a);*/
 
 function min(arr) {
   let a = arr.length;
-  minimum = arr[a - 1];
+  let minimum = arr[a - 1];
   while (a--) {
     if (arr[a] < minimum) {
       minimum = arr[a];
@@ -29,7 +29,7 @@ let array = [1, 2, 3, 4, 5];
 let m = min(array);
 console.log(m);*/
 
-/*Max*/
+/*Max
 
 function max(arr) {
   let a = arr.length;
@@ -43,4 +43,7 @@ function max(arr) {
 }
 let array = [1, 2, 3, 4, 5];
 let m = max(array);
-console.log(m);
+console.log(m);*/
+
+/*Bonus*/
+
