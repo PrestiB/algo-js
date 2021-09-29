@@ -1,49 +1,42 @@
-/*Average
-
-function average(arr) {
-  let i = 0,
-    sum = 0,
-    ArrayLen = arr.length;
-  while (i < ArrayLen) {
-    sum = sum + arr[i++];
-  }
-  return sum / ArrayLen;
+const readlineSync = require("readline-sync");
+const rand10 = () => {
+    return Math.floor(Math.random()*10)
 }
-let arr = [1, 2, 3, 4, 5];
-let a = average(arr);
-console.log(a);*/
-
-/*Min
-
-function min(arr) {
-  let a = arr.length;
-  let minimum = arr[a - 1];
-  while (a--) {
-    if (arr[a] < minimum) {
-      minimum = arr[a];
+const average = (arr) => {
+    let total = 0
+    for (let i=0; i<arr.length; i++){
+        total += arr[i]
     }
-  }
-  return minimum;
+
+    console.log(total/arr.length)
 }
-let array = [1, 2, 3, 4, 5];
-let m = min(array);
-console.log(m);*/
 
-/*Max
+average ([1,2,3,4,5,8,9])
 
-function max(arr) {
-  let a = arr.length;
-  maximum = arr[a - 1];
-  while (a--) {
-    if (arr[a] > maximum) {
-      maximum = arr[a];
+const min = (arr) => {
+
+    console.log(Math.min(...arr))
+}
+
+min ([1,2,3,4,5,8,9])
+
+const max = (arr) => {
+
+    console.log(Math.max(...arr))
+}
+
+max ([1,2,3,4,5,8,9])
+
+const multiRand = (n) => {
+    let array = new Array(n)
+    for (let i=0; i<array.length; i++) {
+        array[i]=rand10();
     }
-  }
-  return maximum;
+    return array 
 }
-let array = [1, 2, 3, 4, 5];
-let m = max(array);
-console.log(m);*/
+let n = parseInt (readlineSync.question("Pick a number : "))
 
-/*Bonus*/
-
+let array = multiRand(n)
+max(array)
+min(array)
+average(array)
