@@ -5,11 +5,11 @@
  * Partie 2 = optimisé (cheminement à l'envers du 2)
  */
 
- const rand10 = () => {
-    return Math.floor(Math.random()*10)
-}
+const rand10 = () => {
+  return Math.floor(Math.random() * 10);
+};
 
-console.log(rand10())
+console.log(rand10());
 
 /* Partie 1 = cheminement logique, mais pas optimisé)
     const rand10 = () => {
