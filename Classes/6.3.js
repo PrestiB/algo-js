@@ -1,16 +1,17 @@
-class Cat {
+class Dog {
   constructor(name) {
     this.name = name;
-    this.greeting = "Miaou! ";
+    this.greeting = "Waouf! ";
   }
   sayHello() {
     return this.greeting + "I'm " + this.name;
   }
 }
-class Dog {
+
+class Cat {
   constructor(name) {
     this.name = name;
-    this.greeting = "Waouf! ";
+    this.greeting = "Miaou! ";
   }
   sayHello() {
     return this.greeting + "I'm " + this.name;
